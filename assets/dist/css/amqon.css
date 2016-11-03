@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+.pesan-error
+ {
+	width:100%;
+	height:auto;
+	padding:2px 14px 2px 14px;
+	position:fixed;
+	bottom:0px;
+	right:0px;
+  z-index: 9999;
+ }
+
+ .icon-alert {
+   width: 70%;
+   height: auto;
+   padding: 0 10% 0 20%;
+   font-size: 3em;
+
+ }
+
+ .pagination>li.active>a
+ {
+  background-color: #00a65a;
+  border-color: #008d4c;
+  color: #fff;
+ }
+
+ .pagination>li.active>a:hover
+ {
+  background-color: #03904f;
+  border-color: #03904f;
+  color: #fff;
+
+ }
+
+ /*Drop & Drag Image*/
+ .ezdz-dropzone {
+    position: relative;
+    border-radius: 5px;
+    font: bold 24px arial;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    border: 2px dashed lightgray;
+    color: lightgray;
+    overflow: hidden;
+}
+
+.ezdz-dropzone div {
+    /* */
+}
+
+.ezdz-dropzone span {
+    border-radius: 20px;
+    background: black;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    max-width: 90%;
+    vertical-align: middle;
+    padding: 4%;
+    line-height: 10px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ezdz-dropzone img {
+    border-radius: 5px;
+    max-width: 50%;
+    max-height: auto;
+    margin-top: -3px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width:460px) {
+  .ezdz-dropzone img {
+      max-width: 70%;
+  }
+}
+
+.ezdz-dropzone [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.ezdz-focus {
+    border: 4px dashed darkgray;
+    color: darkgray;
+}
+
+.ezdz-enter {
+    border: 4px dashed rgb(22, 140, 184);
+    color: #464646;
+}
+
+.ezdz-accept {
+    border: 1px solid rgb(22, 140, 184);
+    color: gray;
+}
+
+.ezdz-reject {
+    border: 2px solid darkred;
+    color: darkred;
+}
